@@ -1,4 +1,4 @@
-import { BrowserView, BrowserWindow, app } from 'electron'
+import { BrowserWindow, app } from 'electron'
 import isDev from 'electron-is-dev'
 import { resolve } from 'path'
 function createWindow() {

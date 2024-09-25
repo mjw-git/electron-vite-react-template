@@ -14,15 +14,17 @@
     "noEmit": true,
     "jsx": "react-jsx",
     /* Linting */
-    "strict": true,
+    "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["render/src/*"],
+      "@main/*": ["main/*"]
+    }
   },
-  "baseUrl": "./render",
-  "paths": {
-    "@/*": ["src/*"]
-  },
+
   "include": ["./render/**/*", "./main/**/*"],
   "exclude": ["assets", "node_modules", "main-dist"]
   // "references": [{ "path": "./tsconfig.node.json" }]
